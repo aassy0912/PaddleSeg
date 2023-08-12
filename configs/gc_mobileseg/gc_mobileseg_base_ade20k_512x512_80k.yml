@@ -1,4 +1,4 @@
-_base_: '../pp_mobileseg/pp_mobileseg_base_ade20k_512x512_80k'
+_base_: '../pp_mobileseg/pp_mobileseg_base_ade20k_512x512_80k.yml'
 
 batch_size: 8  # total batch size is 32
 iters: 80000
