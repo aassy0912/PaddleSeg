@@ -5,3 +5,10 @@ iters: 80000
 
 model:
   type: GCMobileSeg
+  num_classes: 19
+  backbone:
+    type: MobileSeg_Base
+    inj_type: AAMSx8
+    out_feat_chs: [64, 128, 192] 
+    pretrained: https://bj.bcebos.com/paddleseg/dygraph/ade20k/pp_mobileseg/pretrain/model.pdparams
+  upsample: intepolate # During exportation, you need to change it to vim for using VIM
